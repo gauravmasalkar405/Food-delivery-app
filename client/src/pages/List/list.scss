@@ -1,0 +1,244 @@
+.list-main {
+  .list-select-category-container {
+    display: flex;
+    gap: 1rem;
+    padding: 0px 50px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 8px 8px rgba(28, 28, 28, 0.06);
+
+    .list-select-category {
+      display: flex;
+      height: 5.5rem;
+      width: 13rem;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: rgb(105, 105, 105);
+      font-size: 1.1rem;
+      font-weight: 500;
+
+      div {
+        background-color: rgb(248, 248, 248);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+
+        img {
+          height: 60%;
+          width: 60%;
+        }
+      }
+
+      .add-bg {
+        background-color: rgb(229, 243, 243);
+      }
+    }
+
+    .list-select-category-add-bg {
+      border-bottom: 2px solid rgb(239, 79, 95);
+      color: rgb(239, 79, 95);
+    }
+  }
+
+  .list-filters-container {
+    margin-bottom: 2rem;
+    padding: 0px 50px;
+
+    .filter-btn {
+      height: 2.18rem;
+      width: 5rem;
+      border: 1px solid rgb(207, 207, 207);
+      color: rgb(156, 156, 156);
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+      border-radius: 0.8rem;
+      padding: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.87rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(229, 243, 243);
+      }
+    }
+
+    .list-filters-list-and-options-container {
+      height: 350px;
+      width: 600px;
+      box-shadow: rgba(28, 28, 28, 0.15) 0px 2px 8px;
+      border: 1px solid rgba(28, 28, 28, 0.15);
+      border-radius: 5px;
+
+      .list-filters-body {
+        display: flex;
+        height: 88%;
+        margin-bottom: 4px;
+        border-bottom: 1px solid rgba(28, 28, 28, 0.15);
+
+        .list-filters-list {
+          cursor: pointer;
+          width: 30%;
+          list-style: none;
+
+          li {
+            height: 25%;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            padding-left: 15px;
+            background: rgb(248, 248, 248);
+          }
+
+          .add-bg {
+            padding-left: 15px - 2px;
+            border-left: 3px solid rgb(239, 79, 95);
+            background: white;
+          }
+        }
+
+        .list-filters-options {
+          width: 70%;
+          padding-left: 10px;
+
+          div {
+            height: 100%;
+
+            .list-filter-options-sort-by-container {
+              height: 100%;
+              width: 100%;
+
+              label {
+                height: 3rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                font-size: 0.85rem;
+
+                input {
+                  width: 1rem;
+                  height: 1rem;
+                  border-radius: 50%;
+                  appearance: none;
+                  outline: none;
+                  border: 1px solid #333;
+                  background-color: transparent;
+                  cursor: pointer;
+
+                  &:checked {
+                    background-color: rgb(239, 79, 95);
+                    border: 1px solid rgb(239, 79, 95);
+                  }
+                }
+              }
+            }
+
+            .list-filter-options-cuisines-container {
+              margin-top: 1rem;
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              overflow-y: scroll;
+
+              label {
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                font-size: 0.85rem;
+
+                input {
+                  cursor: pointer;
+
+                  &:checked {
+                    background-color: rgb(239, 79, 95);
+                    border: 1px solid rgb(239, 79, 95);
+                  }
+                }
+              }
+            }
+
+            .list-filter-options-raiting-container {
+              height: 100%;
+              margin-top: 1rem;
+
+              .rating-container {
+                height: 20%;
+
+                p {
+                  color: #333;
+                  font-size: 0.9rem;
+                }
+
+                .rating {
+                  margin-left: 15px;
+                }
+              }
+
+              .input-container {
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                input {
+                  cursor: pointer;
+                  margin-bottom: 2rem;
+                  width: 80%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .filter-apply-btn-conatiner {
+        height: 12%;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 10px;
+        padding-bottom: 20px;
+
+        button {
+          height: 30px;
+          width: 70px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          color: white;
+          background-color: rgb(239, 79, 95);
+
+          &:hover {
+            background-color: rgb(220, 69, 86);
+          }
+        }
+      }
+    }
+  }
+
+  .list-restaurants {
+    margin-top: 1rem;
+    padding: 0px 50px;
+
+    h2 {
+      text-align: center;
+      font-size: 35px;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+
+    .list-card {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 2rem;
+    }
+  }
+}

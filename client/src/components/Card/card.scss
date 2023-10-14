@@ -1,0 +1,56 @@
+.card-main-container {
+  cursor: pointer;
+  width: 21rem;
+  border: 1px solid red;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 0.1rem solid rgb(232, 232, 232);
+
+  &:hover {
+    box-shadow: 5px 5px 5px rgba(28, 28, 28, 0.08);
+    border: 1px solid rgba(28, 28, 28, 0.08);
+  }
+
+  .card-image {
+    height: 247px;
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .name-rating-container {
+    display: flex;
+    justify-content: space-between;
+
+    .name {
+      color: black;
+    }
+
+    .rating {
+      background-color: rgb(38, 126, 62);
+      color: white;
+      border-radius: 0.4rem;
+      font-size: 0.8rem;
+      width: 25px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .cuisines-and-price-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+
+    div {
+      width: 60%;
+    }
+  }
+
+  .time {
+    text-align: right;
+    font-size: 0.75rem;
+    color: black;
+  }
+}
